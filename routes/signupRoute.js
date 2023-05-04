@@ -6,6 +6,8 @@ const ChatAppController = require('../controllers/signupController');
 
 const router = express.Router();
 
-router.post('/ChatApp/signup', ChatAppController.signUpUser);
+router.post('/signup', ChatAppController.signUpUser);
+
+router.post('/login', ChatAppController.loginUser);
 
 module.exports = router;
